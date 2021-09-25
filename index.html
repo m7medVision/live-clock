@@ -14,7 +14,7 @@
   
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script><script  src="./script.js"></script><script>
 
-  fetch("http://api.aladhan.com/v1/gToH")
+  fetch("https://api.aladhan.com/v1/gToH")
     .then((response) => response.json())
     .then((json) => {
      document.getElementById('higri').innerHTML=json.data.hijri.date+"  "+ json.data.hijri.weekday.ar })
