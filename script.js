@@ -21,7 +21,6 @@ function updateTime() {
         var m = " PM"
     }
     clock.time = zeroPadding(time1, 2) + ':' + zeroPadding(cd.getMinutes(), 2) + ':' + zeroPadding(cd.getSeconds(), 2) + zeroPadding(m) ;
-    clock.date = zeroPadding(cd.getFullYear(), 4) + '-' + zeroPadding(cd.getMonth()+1, 2) + '-' + zeroPadding(cd.getDate(), 2) + ' ' + week[cd.getDay()];
 };
 
 function zeroPadding(num, digit) {
